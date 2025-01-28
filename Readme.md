@@ -25,14 +25,14 @@ Este projeto consiste em uma aplicação Node.js que consome duas APIs externas 
 - **Docker** instalado para rodar a aplicação em contêiner.
 - Conta no **Supabase** para configurar a base de dados.
 
-## Como Rodar o Projeto
+## Como Executar o Projeto
 
 ### 1. Instalação das Dependências
 
 Clone este repositório:
 
 ```bash
-git clone <url-do-repositório>
+git clone https://github.com/KalliSmb/gastronomia-clima
 cd <diretório-do-repositório>
 ```
 
@@ -65,7 +65,7 @@ SUPABASE_KEY=<sua-chave-do-supabase>
 ### 3. Configuração das APIs Externas
 1. **OpenWeather API**: Crie uma conta e obtenha uma chave de API em OpenWeather.
 2. **Yelp API**: Crie uma conta e obtenha uma chave de API em Yelp Fusion.
-Adicione essas chaves ao arquivo `.env`:
+Adicione essas chaves ao ficheiro `.env`:
 
 ```env
 OPENWEATHER_API_KEY=<sua-chave-do-openweather>
@@ -86,7 +86,7 @@ Para rodar a aplicação em um container Docker, execute os seguintes comandos:
 
 1. **Build da Imagem Docker**:
 ```bash
-docker build -t <nome-da-imagem> .
+docker-compose up --build
 ```
 
 2. **Execução do Container**:
